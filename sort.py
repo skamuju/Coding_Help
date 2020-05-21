@@ -31,7 +31,7 @@ def n_max():
         order_l3.append(max(copy_rand3))
         copy_rand3.remove(max(copy_rand3))
     n = int(input("n = "))-1
-    return order_l3,order_l3[n]
+    return order_l3[n]
 
 print(max_order())
 print(min_order())
