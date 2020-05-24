@@ -15,3 +15,5 @@ def register():
     post =  {'username': data['username'], 'email': data['email'], }
     collection.insert_one(post)
     return jsonify({"success": True})
+
+app.run(host="0.0.0.0")

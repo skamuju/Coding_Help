@@ -10,13 +10,11 @@ def maximum():
 
 def max_order():
     order_l = []
-    og_sample = []
     copy_rand = random.sample(num_list, 4)
-    og_sample.append(copy_rand)
     for x in range(4):
         order_l.append(max(copy_rand))
         copy_rand.remove(max(copy_rand))
-    return og_sample, order_l
+    return order_l
 
 def min_order():
     order_l2 = []
